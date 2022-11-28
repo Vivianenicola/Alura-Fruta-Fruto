@@ -1,0 +1,26 @@
+.cabecalho {
+    align-items: center;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+   }
+/*a largura mínima dele vai ser zero. Então a estilização que estiver dentro do {} pode ser
+usado para celulares*/
+
+/*então quando a tela for maior que zero, ele vai aplicar os estilos abaixo*/
+   @media screen and (min-width: 0) {
+        .cabecalho{
+            justify-content: center;
+            padding: 0 1rem; /*não queremos espaço em cima e baixo, apenas espaçamento nas laterais*/
+        }
+   }
+/*quando a tela for maior que 768px, ele vai aplicar os estilos abaixo*/
+   @media screen and (min-width: 768px) {
+        .cabecalho{
+            padding: 0 5 rem;
+            justify-content: space-between;
+    }
+    
+   }
